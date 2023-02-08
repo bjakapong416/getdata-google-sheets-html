@@ -1,0 +1,10 @@
+.flex-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  background-color: #bbdefb;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+
+}
