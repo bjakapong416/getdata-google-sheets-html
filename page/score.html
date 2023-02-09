@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<title>Page - Login</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+	<!-- Custom styles for this template -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;500&family=Prompt:wght@300&display=swap"
+		rel="stylesheet" />
+	<link href="../styles/header.css" rel="stylesheet" />
+
+	<link href="../styles/shared.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" />
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="../vendor/jquery/jquery.min.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="../page/login.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+	<style>
+		* {
+			font-family: "Kanit", "Segoe UI", "Tahoma", "Geneva", "Verdana",
+				"sans-serif";
+		}
+	</style>
+</head>
+
+<body style="background-color: #c4d4e3">
+	<div id="header"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 d-flex justify-content-center mt-3 mb-3" style="align-items: center">
+				<img src="../assets/images/heartsfp.png" alt="First slide" width="100" height="auto"
+					class="img-fluid" />
+				<h3 class="display-5 font-weight-bold text-uppercase" style="color: #364789">
+					Score Card
+				</h3>
+			</div>
+		</div>
+		<div class="row mb-2">
+			<div class="col-12 d-flex justify-content-center" style="align-items: center">
+				<h3 class="display-5 font-weight-bold text-uppercase" style="color: #8593ba">
+					คะแนน SFP ของ
+				</h3>
+			</div>
+		</div>
+		<div class="row mb-2">
+			<div class="col-12 d-flex justify-content-center" style="align-items: center">
+				<h2 class="display-5 text-uppercase" style="color: #1f242a">
+					<span id="empName">ใครกันเอ่ย</span>
+				</h2>
+			</div>
+		</div>
+		<div class="row align-items-center justify-content-center">
+			<div class="col-7 col-md-4 col-sm-5 col-lg-3 p-1" style="align-items: center">
+				<div class="row">
+					<div class="col-12">
+						<div class="card mb-2 mt-2" style="height: 80px; border-radius: 100px">
+							<div class="card-body p-0 d-flex align-items-center">
+								<div style="
+                      border: 1px solid #00aeef;
+                      border-radius: 100%;
+                      border-width: 5px;
+                      width: 80px;
+                      height: 80px;
+                      overflow: hidden;
+                    ">
+									<img src="../assets/images/mascot-s-full.png" alt="First slide" width="65"
+										class="img-fluid" />
+								</div>
+								<div class="ml-1">
+									<span class="display-5 m-0" style="color: #7ca9c9">SMART</span>
+									<h1 class="display-5" style="color: #7ca9c9">
+										<span id="sScore">??</span><span style="color: #1c3e51">/40</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+						<div class="card mb-2 mt-2" style="height: 80px; border-radius: 100px">
+							<div class="card-body p-0 d-flex align-items-center">
+								<div style="
+                      border: 1px solid #50b848;
+                      border-radius: 100%;
+                      border-width: 5px;
+                      width: 80px;
+                      height: 80px;
+                      overflow: hidden;
+                    ">
+									<img src="../assets/images/mascot-f-full.png" alt="First slide" width="65"
+										class="img-fluid" />
+								</div>
+								<div class="ml-1">
+									<span class="display-5 m-0" style="color: #50b848">FRIENDLY</span>
+									<h1 class="display-5" style="color: #50b848">
+										<span id="fScore">??</span><span style="color: #1c3e51">/40</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+						<div class="card mb-2 mt-2" style="height: 80px; border-radius: 100px">
+							<div class="card-body p-0 d-flex align-items-center">
+								<div style="
+                      border: 1px solid #ed145b;
+                      border-radius: 100%;
+                      border-width: 5px;
+                      width: 80px;
+                      height: 80px;
+                      overflow: hidden;
+                    ">
+									<img src="../assets/images/mascot-p-full.png" alt="First slide" width="65"
+										class="img-fluid" />
+								</div>
+								<div class="ml-1">
+									<span class="m-0 d-flex" style="color: #ed145b; font-size: 14px">
+										PROBLEM SOLVER
+									</span>
+									<h1 class="display-5" style="color: #ed145b">
+										<span id="pScore">??</span><span style="color: #1c3e51">/40</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-5 col-md-4 col-sm-5 col-lg-2 p-2" style="align-items: center">
+				<div class="card" style="
+              height: 260px;
+              border-radius: 18px;
+              background-color: #0e3b58;
+            ">
+					<div class="card-body align-items-center">
+						<h5 class="display-5 text-uppercase mb-2 text-center" style="color: #7ca9c9">
+							คะแนนรวม
+						</h5>
+						<h1 class="display-4 text-uppercase mb-2 font-weight-bold text-center" style="color: #7ca9c9">
+							<span id="totalScore">??</span>
+						</h1>
+						<div class="bg-white" style="
+                  width: 65px;
+                  height: 10px;
+                  transform: rotateZ(175deg);
+                  margin: auto;
+                "></div>
+						<h1 class="display-4 text-uppercase mb-2 font-weight-bold text-center" style="color: #fff">
+							120
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center justify-content-center">
+			<div class="col-lg-5 col-md-8 col-sm-10 col-12 mt-2">
+				<div class="card" style="border-radius: 18px">
+					<div class="card-header p-2">
+						<h4 class="display-6 text-center">คะแนนนำ! ไม่เกรงใจใคร</h4>
+					</div>
+					<div class="card-body p-2" id="highScoreCards">
+					</div>
+				</div>
+                <p class="text-center text-secondary py-2">
+                    เวลาอัพเดทข้อมูลล่าสุด: <span id="latestTime"></span>
+                </p>
+			</div>
+		</div>
+	</div>
+	<script src="../js/app.js"></script>
+	<script src="./score.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Page - Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;500&family=Prompt:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styles/header.css" rel="stylesheet" />
+
+    <link href="../styles/shared.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
+    />
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../page/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <style>
+      * {
+        font-family: "Kanit", "Segoe UI", "Tahoma", "Geneva", "Verdana",
+          "sans-serif";
+      }
+    </style>
+  </head>
+
+  <body style="background-color: #4b61a9">
+    <div id="header"></div>
+    <div
+      class="container"
+      style="
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      "
+    >
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="text-center">
+            <img
+              src="../assets/images/heartsfp.png"
+              alt="logo_login"
+              width="300"
+              height="auto"
+              class="img-fluid"
+            />
+            <h1
+              class="display-4 font-weight-bold text-uppercase text-white mb-5"
+            >
+              Score Card
+            </h1>
+          </div>
+          <form method="get" action="score.html">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control form-control-lg text-center"
+                placeholder="กรอกรหัสพนักงาน"
+                name="empno"
+                required
+              />
+            </div>
+            <button
+              class="btn btn-lg btn-block text-white"
+              style="background-color: #f886a0"
+            >
+              <span class="h2 text-uppercase font-weight-bold text-white"
+                >Go!</span
+              >
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
