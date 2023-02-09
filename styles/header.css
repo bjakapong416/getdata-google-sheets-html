@@ -20,10 +20,10 @@
   transform:scaleX(1.2);
 }
 .heading{
-  font-size:40px;
-  font-weight:500;
+  /* font-size:40px;
+  font-weight:500; */
   margin:5px;
-  padding:auto;
+  margin-bottom: 100px;
   z-index:1;
   width:100%;
   color: #007bff;
