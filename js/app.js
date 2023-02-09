@@ -33,23 +33,43 @@ async function getGSheetObject(url = ''){
 }
 
 async function fetchScores() {
-    message('Loading...');
-
-    getGSheetObject(endpoint1)
+    return await getGSheetObject(endpoint1)
     .then((res) => {
         scores = res.rows.map(m => {
             const arr = m.c.map(n => n.v);
-            return new ScoreCard('', arr[0], arr[1], arr[2], arr[3])
+            return new ScoreCard('019712', 'name', arr[1], arr[2], arr[3])
         });
-
-        message(JSON.stringify(scores));
     })
     .catch((error) => {
-        message('something is not working');
+        alert('something is not working');
         console.error(error);
     })
 }
 
-function message(text) {
-    document.getElementById('message').innerHTML = text;
+function getScoreCardByEmpNo(empNo) {
+    return scores.find(m => m.empNo === empNo);
+}
+
+function getHighScoreCards(ranking) {
+    return scores.sort((a, b) => {
+        if(a.totalScore > b.totalScore) {
+            return -1;
+        }
+        else if (a.totalScore < b.totalScore){
+            return 1;
+        }
+        else {
+            return a.empName < b.empName ? -1 : 1;
+        }
+    })
+    .slice(0, ranking);
+}
+
+function getLatestTime() {
+    const item = scores.sort((a,b) => {
+        return a.name < b.name ? -1 : 1;
+    })
+    .shift();
+
+    return item?.empNo;
 }
