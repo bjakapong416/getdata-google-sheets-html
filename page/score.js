@@ -13,7 +13,6 @@ $(function(){
             setHighScoreCards(highScoreCards);
 
             // Latest Time
-            const latestTime = getLatestTime();
             const now = new Date()
             .toLocaleDateString('en-us', { year: 'numeric', month: 'long', day: 'numeric' }) 
             + ' '+new Date().toLocaleTimeString();
@@ -21,11 +20,12 @@ $(function(){
 
             // Personal Score
             const myScoreCard = getScoreCardByEmpNo(empNo);
-            if (myScoreCard === undefined) {
-                returnToLogin();
+            if (!!myScoreCard) {
+                setScoreByScoreCard(myScoreCard);
             }
             else {
-                setScoreByScoreCard(myScoreCard);
+                alert('empno is not found');
+                returnToLogin();
             }
         })
     }
@@ -47,7 +47,6 @@ function setScore(id, score = null) {
 
 function setScoreByScoreCard(scoreCard) {
     const { empName, sScore, fScore, pScore, totalScore } = scoreCard;
-    console.log(empName, sScore, fScore, pScore, totalScore )
     setEmpName(empName);
     setScore('sScore', sScore);
     setScore('fScore', fScore);
@@ -74,5 +73,5 @@ function setLatestTime(latestTime) {
 }
 
 function returnToLogin() {
-    // window.location = 'login.html';
+    window.location = 'login.html';
 }

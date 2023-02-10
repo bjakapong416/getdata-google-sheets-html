@@ -47,8 +47,7 @@ async function fetchScores() {
             );
           }
         })
-        .filter((m) => m !== undefined);
-      console.log(scores);
+        .filter((m) => !!m);
     })
     .catch((error) => {
       alert("something is not working");
@@ -73,14 +72,4 @@ function getHighScoreCards(ranking) {
       }
     })
     .slice(0, ranking);
-}
-
-function getLatestTime() {
-  const item = scores
-    .sort((a, b) => {
-      return a.name < b.name ? -1 : 1;
-    })
-    .shift();
-
-  return item?.empNo;
 }
