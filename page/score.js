@@ -20,7 +20,6 @@ $(function(){
 
             // Personal Score
             const myScoreCard = getScoreCardByEmpNo(empNo);
-            console.log(myScoreCard)
             if (!!myScoreCard) {
                 setScoreByScoreCard(myScoreCard);
             }
